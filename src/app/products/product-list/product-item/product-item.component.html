@@ -1,0 +1,72 @@
+<!--
+<div class="row">
+    <div class="col-xs-12">
+        <a [routerLink]="[index]" routerLinkActive='active' style="cursor : pointer" class="list-group-item clearfix">
+            <div class="float-start">
+                <h4>{{product.name}}</h4>
+                <p>{{product.description}}</p>
+                <p>RS. {{product.price}}</p>
+
+            </div>
+            <span class="float-end">
+                <img src={{product.imgPath}} alt="" class="img-responsive" style="max-height: 70px;">
+           </span>
+        </a>
+    </div>
+</div>
+
+
+
+        <div class="card" style="background-color:  rgb(250, 234, 218);">
+
+        <mat-card class="mat-elevation-z4" >
+            
+          
+          <img mat-card-image src={{product.imgPath}} class="img-responsive" style="height: 280px ; ">
+          <mat-card-header>
+            <mat-card-title><h5>{{product.name}}</h5></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+                {{(product.description.length>20)? (product.description | slice:0:20)+'..':(product.description)}}
+            </p>
+          </mat-card-content>
+          <h5 class="card-title" >Price : {{product.price}} Rs</h5>
+
+          
+            
+            <button class="btn btn-primary" (click)="quickView()">Quick View</button>
+
+          
+        </mat-card>
+      </div>
+
+      
+
+
+
+-->
+
+
+<div class="card"  style="font-family: sans-serif;">
+    <img class="card-img-top"  src={{product.imgPath}} style="height: 280px ;">
+      <div class="card-body align-items-center">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text">   
+              {{(product.description.length>20)? (product.description | slice:0:20)+'..':(product.description)}}
+          </p>
+          <h5 class="card-title" >Price : {{product.price}} Rs</h5>
+          
+              <button class="btn btn-primary" (click)="quickView()"  style="font-size: 15px;">Quick View</button>
+            
+              {{" "}} 
+
+              <span *ngIf="!showAdd">
+                <button class="btn btn-primary" (click)="addToCart()" style="font-size: 15px;">Add to Cart</button>
+              </span>
+              <span *ngIf="showAdd">
+                <button class='btn btn-primary minus' (click)="buttonMinus()" style="font-size: 15px;">-</button> <span > {{ QtyList.get(product.id)}} </span> <button class='btn btn-primary plus' (click)="buttonPlus()" style="font-size: 15px;"> +</button>
+              </span>
+            
+      </div>
+</div>

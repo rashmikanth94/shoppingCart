@@ -1,0 +1,38 @@
+
+<div class="container mt-4" >
+    <div class="row" >
+        <div class="col-xs-12" >
+            <div *ngIf="!cartItems.length">
+                <h3> Your Cart is empty!! Please select some products and come back </h3>
+            </div>
+            <div *ngIf="cartItems.length">
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let i of cartItems; let id = index">
+                        <span class="float-start">
+                            <img src={{i.imgPath}} alt="" class="img-responsive" style="height: 70px; width: 60px;">
+                        
+                            {{"  "}}
+                            {{i.name}}
+                        </span>
+                        <span class="float-end">
+
+                             ₹{{i.price * QtyList.get(i.id)}} {{"    "}}
+                            <button class='btn btn-primary minus' (click)="buttonMinus(i.id)">-</button> {{" "}}<span >{{QtyList.get(i.id)}} </span> {{" "}}<button class='btn btn-primary plus' (click)="buttonPlus(i.id)"> +</button>
+                                {{" "}}
+                                
+                            <button class="btn btn-danger" (click)="onDelete(id)">Delete</button></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-12" *ngIf="cartItems.length">
+            <button class="btn btn-success" (click)="CheckOut()">CheckOut</button>
+            |
+            <button class="btn btn-success" (click)="ClearCart()">ClearCart</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,117 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "iphone11",
+      "description": "Announced in September 2019, the iPhone 11 was released alongside the iPhone 11 Pro and the iPhone 11 Pro Max. Originally priced at $699, the iPhone 11 was touted as Apple’s newest low-priced phone and the successor to 2018’s slightly pricier iPhone XR. It boasts the same form and screen as the XR, but with Apple’s all-new A13 Bionic chip and an upgraded camera system.",
+      "imgPath": "https://img1.cgtrader.com/items/2156138/b242823940/apple-iphone-11-pro-all-color-3d-model-max-obj-mtl-3ds-fbx-c4d-lwo-lw-lws.jpg",
+      "price": "100000"
+    },
+    {
+      "id": 2,
+      "name": "iphone12",
+      "description": "Apple iPhone 12 comes with the latest operating system of iOS 14.1, It has Apple A14 Bionic (5 nm), It offers a powerful CPU, It offers Hexa-core (2×3.1 GHz Firestorm + 4×1.8 GHz Icestorm), It contains Apple GPU (4-core graphics), it presents a superb performance without any lags, It offers excellent & up-to-date software.",
+      "imgPath": "https://specifications-pro.com/wp-content/uploads/2020/04/iPhone-12-Pro-Max.jpg",
+      "price": "150000"
+    },
+    {
+      "id": 3,
+      "name": "Dell laptop",
+      "description": "The best Laptop with an Intel® Pentium® Gold Processor 7505 (4MB Cache, up to 3.5 GHz) processor. It has Intel® UHD Graphics with shared graphics memory and the battery life is about 7-8 hours",
+      "imgPath": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2018/08/25679-laptop-inspiron-14-5481-t-shot-01-gy-4000x4000-e1535627957927.jpg",
+      "price": "45000"
+    },
+    {
+      "id": 4,
+      "name": "Boat Bass",
+      "description": "These are the best headphones one could ever get in this price range. It has noise cancellation feature. It supports Dolby atoms.",
+      "imgPath": "https://www.dealclear.com/image/cache/catalog/category/Home/Mobile-And-Accessories/Mobile-Accessories/Headphones/Boat-Headphones/ROCKERZ-510/Boat-Rockerz-510-Headphone-dealclear-img6-813x1000.jpg",
+      "price": "4999"
+    },
+    {
+      "id": 5,
+      "name": "Boat Xtend",
+      "description": "The best smart watch at this price range. It supports bluetooth connection to  obiles. It tracks your health details and even tracks your work out progress. You can even answer and reject your calls with this watch. It has an amazing user Interface",
+      "imgPath": "https://beebom.com/wp-content/uploads/2021/07/Untitled-design-5.jpg",
+      "price": "8999"
+    },
+    {
+      "id": 6,
+      "name": "Gap T-Shirt",
+      "description": "Best Quality T shirt at this price range. Super stylish cotton T-shirt with 1 year waranty on damage",
+      "imgPath": "https://www.differenta.com/media/produkty/81172/gap-blue-men-s-t-shirt-with-logo_g-550466-00-C.jpg",
+      "price": "599"
+    },
+    {
+      "id": 7,
+      "name": "LG Fridge",
+      "description": "This product has Convenient design, Ample space,  Sleek, compact design with recessed handles fits into dorm rooms, basements, offices or anywhere a mini fridge is needed. The Quality of this product includes Durable compressor which is tested for extremes to deliver reliable performance; ENERGY STAR rating means more efficiency and less environmental impact",
+      "imgPath": "https://assets.ajmadison.com/image/upload/c_limit,f_auto,fl_lossy.progressive,h_1000,q_auto,w_1000/v1/ajmadison/images/large_no_watermark/maytag_mff2258fez_3_86e92.jpeg",
+      "price": 21999
+    },
+    {
+      "id": 8,
+      "name": "Sherwani",
+      "description": "The best outfit for cultural events.",
+      "imgPath": "https://i.pinimg.com/originals/9b/fa/b2/9bfab2b374e7e4c12de1fd717fe196e4.png",
+      "price": 7999
+    },
+    {
+      "id": 9,
+      "name": "Kenstar Mixer",
+      "description": "This is Powered by a 300W motor, the coffee bean grinder only takes 5 to 20 seconds to deliver consistent coarse powder. You can enjoy the delightful flavors of fresh coffee by customizing the grind size for cold brew coffee, french press, pour over, moka pot, espresso.",
+      "imgPath": "http://img6a.flixcart.com/image/mixer-grinder-juicer/p/y/y/philips-hl1643-04-hl1643-04-original-imae9zzuzbpvmthx.jpeg",
+      "price": 9999
+    },
+    {
+      "id": 10,
+      "name": "Magic Mouse",
+      "description": "Best Mouse that could work with apple devices. Its sleek design and build quality is the best in the market. High Precision PMW3389 Optical Sensor: Equipped with the strongest, most competitive grade mouse sensor chip, with up to 16,000 DPI,IPS of up to 400, and incomparable gripping precision for maximum tracking accuracy. Whether it is for work or gaming, the M1 offers an unparallel experience",
+      "imgPath": "https://www.lifewire.com/thmb/07m1o6yp8mvPvnC_QzMY5hNOsws=/780x780/filters:no_upscale():max_bytes(150000):strip_icc()/_hero_SQ_3LW4132373-1-4e29e1abb88146c68f414628d9dbc94c.jpg",
+      "price": 6999
+    },
+    {
+      "id": 11,
+      "name": "Jack and Jones",
+      "description": "The perfect sweater for the monsoon!!",
+      "imgPath": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/9564821/2019/9/4/fde545a3-0d60-4dd6-833f-ce0a38047bd51567580520318-Roadster-Men-Sweaters-4011567580519322-1.jpg",
+      "price": 999
+    }
+  ],
+  "users": [
+    {
+      "name": "rashmikanth",
+      "email": "rashmikanth94@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "oranges",
+      "email": "rameshparida1999@gmail.com",
+      "password": "12",
+      "id": 2
+    },
+    {
+      "name": "Dell laptop",
+      "email": "x@gmail.com",
+      "password": "1111",
+      "id": 3
+    },
+    {
+      "name": "a",
+      "email": "aaa@gmail.com",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "apples",
+      "email": "rk@gmail.com",
+      "password": "12345",
+      "id": 5
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

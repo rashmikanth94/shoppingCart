@@ -1,0 +1,90 @@
+<!--
+<div class="container">
+<div class="col-md-8">
+<form (ngSubmit)="onAdding()" #e="ngForm">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xs-12">
+            <button type="submit" class="btn btn-primary" [disabled]="!e.valid">Save</button> &nbsp;
+            <button type="button" class="btn btn-danger" (click)="e.reset()">clear</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" ngModel name="name" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <label>Image URL</label>
+            <input type="text" class="form-control" ngModel name="ImgPath" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <label>Description</label>
+            <textarea rows="6" class="form-control" ngModel name="Description" required></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-8">
+                <label>Price</label>
+                <input type="text" class="form-control" ngModel name="price" required>
+            </div>
+           
+        </div>
+    </div>
+    
+</form>
+</div>
+</div>
+-->
+<div class="container mt-4">
+    <div class="col-md-10">
+
+<form (ngSubmit)="onAdding()" #e="ngForm">
+    <div class="row mb-3">
+        <label for="name" class="col-sm-2 col-form-label">Name :</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" ngModel name="name" required #name="ngModel">
+          <span class="help-block" *ngIf="name.touched && !name.valid" style="color: rgb(255, 0, 0);">please enter a Name</span>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="ImgPath" class="col-sm-2 col-form-label">ImgPath :</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" ngModel name="ImgPath" required #path="ngModel" pattern="(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?')">
+          <span class="help-block" *ngIf="path.touched && !path.valid" style="color: rgb(255, 0, 0);">please enter a valid URL</span>
+
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="Description" class="col-sm-2 col-form-label">Description :</label>
+        <div class="col-sm-10">
+            <textarea rows="6" class="form-control" ngModel name="Description" required minlength="5" #desc="ngModel"></textarea>
+            <span class="help-block" *ngIf="desc.touched && !desc.valid" style="color: rgb(255, 0, 0);">Enter a minimum of 5 characters!</span>
+
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="price" class="col-sm-2 col-form-label">Price :</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" ngModel name="price" required onkeypress="return (event.charCode!=8 && event.charCode==0 || (event.charCode==46|| (event.charCode>=48 && event.charCode<=57)))"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row mb-3">
+            <label for="price" class="col-sm-2 col-form-label">{{"       "}}</label>
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-success" [disabled]="!e.valid">Save</button> &nbsp;
+                <button type="button" class="btn btn-danger" (click)="e.reset()">clear</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</div>

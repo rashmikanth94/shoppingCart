@@ -1,0 +1,50 @@
+<div class="container mt-4">
+<div class="row">
+    <div class="col-md-4">
+        <img [src]="currentProduct.imgPath" alt="" class="img-thumbnail" style="height: 400px; width: 350px;">
+    </div>
+
+<div class="col-md-8">
+
+        <div class="row" style="font-style: italic;">
+            <div class="col-xs-12">
+                <h1>{{ currentProduct.name}}</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                {{currentProduct.description}}
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+            price:  {{currentProduct.price}}
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div *ngIf="!ItemInCart">
+                    <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div *ngIf="ItemInCart">
+                    <button class='btn btn-primary minus' (click)="buttonMinus()">-</button> <span > {{ QtyList.get(currentProduct.id)}} </span> <button class='btn btn-primary plus' (click)="buttonPlus()"> +</button>
+                    |
+                    <button class="btn btn-primary" (click)="showCart()">View Cart</button>
+                </div>
+            </div>
+        </div>
+
+</div>
+</div>
+</div>

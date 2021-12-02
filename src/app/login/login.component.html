@@ -1,0 +1,25 @@
+<div class="container mt-2" >
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h6>Please enter email and password</h6>
+                </div>
+                <form (ngSubmit)="onLogIn()" #e="ngForm">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="text" class="form-control" ngModel name="email" required #email="ngModel">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" ngModel name="password" required #password="ngModel">
+                    </div>
+                    <button type="submit" class="btn btn-primary" [disabled]="!e.valid">Sign In</button>
+                </form>
+                <a style="color: #fff; margin-top: 10px; cursor: pointer;" (click)="toSignUp()">New user? Click to signup</a>
+            </div>
+        </div>
+    </div>
+</div>

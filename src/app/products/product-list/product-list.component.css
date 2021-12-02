@@ -1,0 +1,11 @@
+
+.cards {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 15px;
+    font-family: sans-serif;
+    padding-top: 30px;
+}

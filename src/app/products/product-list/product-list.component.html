@@ -1,0 +1,31 @@
+
+<!--
+    <div class="container mt-2" >
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      
+        <app-product-item fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let product of products; let id = index" [product]=product [index]=id>
+        </app-product-item>
+        
+    </div>
+</div>
+</div>
+
+-->
+
+
+<div class="container mt-2" >
+    <div class="cards">
+            <app-product-item *ngFor="let product of pageSlice; let id = index" [product]=product [index]=id [sIdx]=startIndex>
+            </app-product-item>
+    </div>    
+    <br>
+
+
+    <mat-paginator [length]="this.products.length"
+                    [pageSize]="4"
+                    [pageSizeOptions]="[4,8,12]"
+                    (page)="onPageChange($event)">
+    </mat-paginator>
+
+</div>
